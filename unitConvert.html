@@ -107,8 +107,11 @@
             <option value="1">Cm & Meter</option>
           </select>
           <hr />
-          {index === "0" ? <MinutesToHours /> : null}
-          {index === "1" ? <CmToMeter /> : null}
+          {index === "0" ? (
+            <MinutesToHours />
+           ) : index === "1" ? (
+             <CmToMeter />
+            ) : null}
         </div>
       )
     }
